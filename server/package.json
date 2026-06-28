@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Task Tracker Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "mern",
+    "express",
+    "mongodb",
+    "task-tracker"
+  ],
+  "author": "Gaurav Pandey",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2",
+    "mongoose": "^9.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
