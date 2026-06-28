@@ -20,7 +20,7 @@ task-tracker-mern/
  ## ⚙️ Run Locally
 
 ### 1. Clone repo
-git clone https://github.com/your-username/task-tracker-mern.git
+git clone https://github.com/Gau7avvv/task-tracker-mern.git
 
 ### 2. Install backend
 cd server
