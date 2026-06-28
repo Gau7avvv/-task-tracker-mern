@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 app.use("/api/tasks", taskRoutes);
 
 // port
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);

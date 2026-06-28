@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-// ✅ FIXED API URL
-const API = "http://localhost:5002/api/tasks";
+// ✅ LIVE BACKEND API
+const API = "https://taskflow-backend-ird3.onrender.com/api/tasks";
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
@@ -118,7 +118,7 @@ export default function App() {
   );
 }
 
-// styles (same as yours)
+// STYLES
 const styles = {
   bg: {
     height: "100vh",
@@ -137,9 +137,22 @@ const styles = {
     boxShadow: "0 20px 50px rgba(0,0,0,0.4)",
     color: "white",
   },
-  heading: { textAlign: "center", fontSize: "28px" },
-  sub: { textAlign: "center", fontSize: "12px", opacity: 0.7 },
-  inputBox: { display: "flex", gap: "10px", margin: "20px 0" },
+  heading: {
+    textAlign: "center",
+    fontSize: "28px",
+    marginBottom: "5px",
+  },
+  sub: {
+    textAlign: "center",
+    fontSize: "12px",
+    opacity: 0.7,
+    marginBottom: "20px",
+  },
+  inputBox: {
+    display: "flex",
+    gap: "10px",
+    marginBottom: "20px",
+  },
   input: {
     flex: 1,
     padding: "12px",
@@ -156,17 +169,35 @@ const styles = {
     cursor: "pointer",
     fontWeight: "bold",
   },
-  list: { display: "flex", flexDirection: "column", gap: "12px" },
+  list: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "12px",
+  },
   card: {
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
     padding: "12px",
     borderRadius: "12px",
     background: "rgba(255,255,255,0.08)",
   },
-  taskText: { cursor: "pointer", fontSize: "14px", flex: 1 },
-  actions: { display: "flex", gap: "10px", alignItems: "center" },
-  badge: { fontSize: "10px", padding: "4px 8px", borderRadius: "20px" },
+  taskText: {
+    cursor: "pointer",
+    fontSize: "14px",
+    flex: 1,
+  },
+  actions: {
+    display: "flex",
+    gap: "10px",
+    alignItems: "center",
+  },
+  badge: {
+    fontSize: "10px",
+    padding: "4px 8px",
+    borderRadius: "20px",
+    color: "white",
+  },
   deleteBtn: {
     background: "transparent",
     border: "none",
@@ -174,5 +205,8 @@ const styles = {
     fontSize: "16px",
     cursor: "pointer",
   },
-  empty: { textAlign: "center", opacity: 0.6 },
+  empty: {
+    textAlign: "center",
+    opacity: 0.6,
+  },
 };
